@@ -14,7 +14,7 @@ app.set('view engine', 'mustache');
 app.set('views', './pages')
 
 app.use(session({
-  secret: "test1234",
+  secret: "Very, very secret.",
   resave: false,
   saveUninitialized: false,
   cookie: {
