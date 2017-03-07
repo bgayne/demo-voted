@@ -1,0 +1,47 @@
+
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/page-poll.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/page-poll.min.css" rel="stylesheet"/>
+  </head>
+  <pageid id="{{pid}}"></pageid>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="#" class="navbar-brand">Voted</a></div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="user"><a>{{ uname }}</a></li>
+          <li class="logout"><a href="../logout/">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-lg-4 col-xl-5"></div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">{{title}}</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <form class="col-xs-12 form-group">{{{pollOptions}}}
+                  <div class="col-xs-12">
+                    <button id="submit" class="btn btn-success">SUBMIT</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <p>Just want the results? <a>Click here.</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

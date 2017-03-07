@@ -1,0 +1,21 @@
+//output:page-user.html
+
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-user.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-user.min.css" rel="stylesheet")
+   body
+    {{{nav}}}
+    div.container-fluid
+      div.row
+        div.col-md-3.col-lg-4.col-xl-5
+        div.col-md-6.col-lg-4.col-xl-2.center-column
+          div.panel.panel-primary
+            div.panel-heading
+              h3.panel-title My Polls
+            div.panel-body
+              div.row
+                div.col-xs-12.poll-list

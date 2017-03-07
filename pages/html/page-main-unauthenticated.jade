@@ -1,0 +1,27 @@
+//output:page-main-unauthenticated.html
+
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-main.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-main.min.css" rel="stylesheet")
+   body
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a(href="/").navbar-brand Voted
+        ul.nav.navbar-nav.navbar-right
+          li.signup
+            a(href="/register/") Sign Up
+          li.login 
+            a(href="/login/") Login
+    div.container
+      div.alignment-container
+        h1.title Voted
+        h4.subheading Welcome to Voted. Before you can make a poll, 
+          a(href="../login") please log in.
+        h4 Don't have an account? 
+          a(href="../register") Click here.
+        

@@ -1,0 +1,25 @@
+
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/page-main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/page-main.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="/" class="navbar-brand">Voted</a></div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="user"><a href="/user/">{{ uname }}</a></li>
+          <li class="logout"><a href="/logout/">Logout  </a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="title">Welcome back, {{ uname }}!</h1>
+      <h4 class="subheading">Click <a href="/polls/new">here</a> to make a new poll.</h4>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+//output:page-results.html
+
+html
+  head
+    script(src="https://d3js.org/d3.v4.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-results.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-results.min.css" rel="stylesheet")
+    pageid(id="{{pid}}")
+    body
+      {{{nav}}}
+      div.results-container
+        div.panel.panel-primary
+          div.panel-heading
+            h3.panel-title {{title}}
+          div.panel-body
+            div.row
+              div.col-xs-12.bars
+      

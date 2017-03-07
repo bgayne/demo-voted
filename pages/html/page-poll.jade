@@ -1,0 +1,39 @@
+//output:page-poll.html
+
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-poll.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-poll.min.css" rel="stylesheet")
+  pageid(id="{{pid}}")
+  body
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a(href="#").navbar-brand Voted
+        ul.nav.navbar-nav.navbar-right
+          li.user
+            a {{ uname }}
+          li.logout
+            a(href="../logout/") Logout
+    div.container-fluid
+      div.row
+        div.col-md-3.col-lg-4.col-xl-5
+        div.col-md-6.col-lg-4.col-xl-2
+          div.panel.panel-primary
+            div.panel-heading
+              h3.panel-title {{title}}
+            div.panel-body
+              div.row
+                form.col-xs-12.form-group
+                  {{{pollOptions}}}
+                  div.col-xs-12
+                    button#submit.btn.btn-success SUBMIT
+            div.panel-footer
+              p Just want the results? 
+                a Click here.
+
+  

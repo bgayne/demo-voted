@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/page-register.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/page-register.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="/" class="navbar-brand">Voted</a></div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="signup"><a href="../register/">Sign Up</a></li>
+          <li class="login"> <a href="../login/">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-lg-4 col-xl-5"></div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">Welcome to Voted</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <form class="col-xs-12 register">
+                  <div class="form-group col-xs-12">
+                    <input type="text" id="username" placeholder="Username" class="form-control"/>
+                  </div>
+                  <div class="col-xs-12 form-group">
+                    <input type="password" id="password" placeholder="Password" class="form-control"/>
+                  </div>
+                  <div class="col-xs-12 form-group">
+                    <input type="text" id="email" placeholder="Email" class="form-control"/>
+                  </div>
+                  <div class="col-xs-6">
+                    <input type="text" id="firstname" placeholder="First Name" class="form-control"/>
+                  </div>
+                  <div class="col-xs-6">
+                    <input type="text" id="lastname" placeholder="Last Name" class="form-control"/>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="submit" class="btn btn-primary btn-signup">SIGN UP</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="email-alert alert alert-danger hidden"><strong>Invalid Email! </strong><br/>The email address you've currently entered is invalid. <br/>Please use an email address in the form of abc@def.xyz.</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

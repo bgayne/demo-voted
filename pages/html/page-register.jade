@@ -1,0 +1,48 @@
+//output:page-register.html
+
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-register.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-register.min.css" rel="stylesheet")
+   body
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a(href="/").navbar-brand Voted
+        ul.nav.navbar-nav.navbar-right
+          li.signup
+            a(href="../register/") Sign Up
+          li.login 
+            a(href="../login/") Login
+    div.container-fluid
+      div.row
+        div.col-md-3.col-lg-4.col-xl-5
+        div.col-md-6.col-lg-4.col-xl-2
+          div.panel.panel-primary
+            div.panel-heading
+              h3.panel-title Welcome to Voted
+            div.panel-body
+              div.row
+                form.col-xs-12.register
+                  div.form-group.col-xs-12
+                    input(type="text" id="username" placeholder="Username").form-control
+                  div.col-xs-12.form-group
+                    input(type="password" id="password" placeholder="Password").form-control
+                  div.col-xs-12.form-group
+                    input(type="text" id="email" placeholder="Email").form-control
+                  div.col-xs-6
+                    input(type="text" id="firstname" placeholder="First Name").form-control
+                  div.col-xs-6
+                    input(type="text" id="lastname" placeholder="Last Name").form-control
+                  div.col-xs-12
+                    button(type="submit").btn.btn-primary.btn-signup SIGN UP
+          div.email-alert.alert.alert-danger.hidden
+            strong Invalid Email! 
+            br  
+            | The email address you've currently entered is invalid. 
+            br
+            | Please use an email address in the form of abc@def.xyz.
+    

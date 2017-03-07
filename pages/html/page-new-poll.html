@@ -1,0 +1,57 @@
+
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/page-new-poll.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/page-new-poll.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header"><a href="/" class="navbar-brand">Voted</a></div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="user"><a>{{ uname }}</a></li>
+          <li class="logout"><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 col-lg-4 col-xl-5"></div>
+        <div class="col-md-6 col-lg-4 col-xl-2">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">New Poll</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <form class="col-xs-12 form-group">
+                  <div class="title">
+                    <h4>Title:</h4>
+                    <input type="text" placeholder="Poll Title" id="title" class="form-control"/>
+                  </div>
+                  <div class="options">
+                    <h4 class="option-title">Options</h4>
+                    <div class="option-container">
+                      <div class="option-1 option-item">
+                        <input type="text" placeholder="Option 1" id="option-1" class="form-control"/><i class="fa fa-plus delete delete-1"></i>
+                      </div>
+                      <div class="option-2 option-item">
+                        <input type="text" placeholder="Option 2" id="option-2" class="form-control"/><i class="fa fa-plus delete delete-2"></i>
+                      </div>
+                    </div>
+                    <button id="new-option" class="form-control new-button"> <i class="fa fa-plus new"></i></button>
+                    <button id="submit" type="submit" class="btn btn-primary form-control">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

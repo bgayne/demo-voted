@@ -1,0 +1,50 @@
+//output:page-new-poll.html
+
+html
+  head
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+    script(src="/js/page-new-poll.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+    link(href="/css/page-new-poll.min.css" rel="stylesheet")
+   body
+    nav.navbar.navbar-default
+      div.container-fluid
+        div.navbar-header
+          a(href="/").navbar-brand Voted
+        ul.nav.navbar-nav.navbar-right
+          li.user
+            a {{ uname }}
+          li.logout
+            a(href="/logout") Logout
+
+            
+    div.container-fluid
+      div.row
+        div.col-md-3.col-lg-4.col-xl-5
+        div.col-md-6.col-lg-4.col-xl-2
+          div.panel.panel-primary
+            div.panel-heading
+              h3.panel-title New Poll
+            div.panel-body
+              div.row
+                form.col-xs-12.form-group
+                  div.title
+                    h4 Title:
+                    input(type="text" placeholder="Poll Title", id="title").form-control
+                  div.options
+                    h4.option-title Options
+                    div.option-container
+                      div.option-1.option-item
+                        input(type="text" placeholder="Option 1" id="option-1").form-control
+                        i.fa.fa-plus.delete.delete-1
+                      div.option-2.option-item
+                        input(type="text" placeholder="Option 2" id="option-2").form-control
+                        i.fa.fa-plus.delete.delete-2
+                    button(id="new-option").form-control.new-button 
+                      i.fa.fa-plus.new
+                    button(id="submit" type="submit").btn.btn-primary.form-control Submit
+
+                  
+                  
